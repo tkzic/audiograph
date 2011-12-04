@@ -1,27 +1,26 @@
 audioGraph:
 README.txt
-12/42011
+12/4/2011
 
 iOS audio processing graph demonstration
 
 "An audio processing graph is a Core Foundation opaque type, AUGraph, that you use to construct and manage an audio unit processing chain. A graph can leverage the capabilities of multiple audio units and multiple render callback functions, allowing you to create nearly any audio processing solution you can imagine." - From Apple's "Audio Unit Hosting Guide For iOS" 
 
-AudioGraph is an extension of Apple's MixerHost sample code. 
+AudioGraph is a superset of Apple's MixerHost application. 
 
-audioGraph features:
+Features include:
 
-* Mono and stereo mic/line input processing
-* Callback processing for mic/line input with pass-through
-* DSP effects processing for mic/line input including:
+* Mono and stereo mic/line input
+* Audio effects including:
 	o Ring modulator
-	o FFT passthrough using the Accelerate framework vDSP library.
-	o Real-time variable pitch shifting and frequency detection using Stefan Bernsee's STFT algorithm 
-	o Simple variable speed delay with using a ring buffer adapted from Michael Tyson's TPCircularBuffer class
+	o FFT passthrough using the Accelerate vDSP framework.
+	o Real-time variable pitch shifting and detection using STFT
+	o Simple variable speed delay using a ring buffer 
 	o Recursive moving average filter with variable number of points
-	o Windowed-sinc low pass filter convolution example with variable cutoff frequency
+	o Convolution example with variable filter cutoff frequency
 * Stereo level meter
-* Synthesizer example - a sine wave controlled by an envelope generator
-* iOS 5 features (from code by Chris Adamson) including:
+* Synthesizer example - sine wave with an envelope generator
+* iOS 5 features (from Chris Adamson) including:
 	o MIDI sampler audio unit
 	o file player audio unit
 	o audio unit effects
@@ -47,12 +46,22 @@ audiograph@zerokidz.com
 
 Credits:
 
-This program constitutes repackaging, editing, and theft of amazing work by Chris Adamson, Stefan Bernsee, Michael Tyson, Stephen Smith, Everyone on the Core-Audio mailing list, Apple's IOS developer program, and everybody who contributes to stackoverflow.com. Thank you.
+This project constitutes repackaging, editing, and theft of amazing work by:
+
+Chris Adamson
+Stefan Bernsee
+Michael Tyson
+Stephen Smith
+Contributors to the Apple Core-Audio mailing list
+Contributors to stackoverflow.com
+Apple's IOS developer program
+
+Thank you.
 
 - Tom Zicarelli 12/4/2011
 
-Here is the original README file for MixerHost from Apple
-----------------------------------------------------------
+Here is the original README file for MixerHost
+----------------------------------------------
 
 ===========================================================================
 DESCRIPTION:
