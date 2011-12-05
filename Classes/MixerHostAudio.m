@@ -2105,9 +2105,9 @@ void ConvertInt16ToFloat(MixerHostAudio *THIS, void *buf, float *outputBuf, size
 
 
 
-///////////////////////////////////
+////////////////////////////
 //
-// setup some asbd's (stream formats
+// setup asbd stream formats
 //
 //
 - (void) setupStereoStreamFormat {
@@ -2129,7 +2129,7 @@ void ConvertInt16ToFloat(MixerHostAudio *THIS, void *buf, float *outputBuf, size
     stereoStreamFormat.mSampleRate        = graphSampleRate;
 
 
-    NSLog (@"The stereo stream format for the \"guitar\" mixer input bus:");
+    NSLog (@"The stereo stream format:");
     [self printASBD: stereoStreamFormat];
 }
 
@@ -2151,7 +2151,7 @@ void ConvertInt16ToFloat(MixerHostAudio *THIS, void *buf, float *outputBuf, size
     monoStreamFormat.mBitsPerChannel    = 8 * bytesPerSample;
     monoStreamFormat.mSampleRate        = graphSampleRate;
 
-    NSLog (@"The mono stream format for the \"beats\" mixer input bus:");
+    NSLog (@"The mono stream format:");
     [self printASBD: monoStreamFormat];
 
 }
@@ -2225,7 +2225,7 @@ void ConvertInt16ToFloat(MixerHostAudio *THIS, void *buf, float *outputBuf, size
     floatStreamFormat.mBitsPerChannel    = 8 * bytesPerSample;
     floatStreamFormat.mSampleRate        = graphSampleRate;
 	
-    NSLog (@"The float stream format for the \"float\" mixer input bus:");
+    NSLog (@"The float stream format:");
     [self printASBD: floatStreamFormat];
 	
 }
