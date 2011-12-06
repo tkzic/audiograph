@@ -789,7 +789,7 @@ OSStatus fftPassThrough (   void                        *inRefCon,          // s
 		
 			
 		// The output signal is now in a split real form. Use the vDSP_ztoc to get
-		// a split real vector.
+		// an interleaved complex vector.
         
         vDSP_ztoc(&A, 1, (COMPLEX *)analysisBuffer, 2, nOver2);
 		
@@ -828,7 +828,7 @@ OSStatus fftPassThrough (   void                        *inRefCon,          // s
 		vDSP_vsmul(A.imagp, 1, &scale, A.imagp, 1, nOver2 );
 		
 		
-        // ship it back to output buffer
+        // convert from split complex to interleaved complex form
 		
 		vDSP_ztoc(&A, 1, (COMPLEX *) outputBuffer, 2, nOver2);
 		
@@ -1364,7 +1364,7 @@ OSStatus movingAverageFilterFloat (
     
     // ok now we have enough samples in the temp delay buffer to actually run the 
     // filter. For example, if slice size is 1024 and filterLength is 101 - then we
-    // should have 1324 samples in the tempDelayBuffer
+    // should have 1124 samples in the tempDelayBuffer
     
     
     signalBuffer = tempCircularFilterBuffer;
@@ -1617,7 +1617,7 @@ OSStatus convolutionFilter (
     
     // ok now we have enough samples in the temp delay buffer to actually run the 
     // filter. For example, if slice size is 1024 and filterLength is 101 - then we
-    // should have 1324 samples in the tempDelayBuffer
+    // should have 1124 samples in the tempDelayBuffer
     
      
     // do convolution
@@ -3040,7 +3040,7 @@ void ConvertInt16ToFloat(MixerHostAudio *THIS, void *buf, float *outputBuf, size
         // Setup the structure that contains the input render callback 
         AURenderCallbackStruct inputCallbackStruct;
 	
-        inputCallbackStruct.inputProc        = micLineInCallback;			// Sint16 version
+        inputCallbackStruct.inputProc        = micLineInCallback;	// 8.24 version
         inputCallbackStruct.inputProcRefCon  = self;
 	
 	

@@ -444,7 +444,7 @@ void smb2PitchShift(float pitchShift, long numSampsToProcess, long fftFrameSize,
 				//	NSLog(@"i: %d, k: %d, window: %f", i, k, window );
 			}
 			
-			
+			// cast to complex interleaved then convert to split complex vector
 			
 			vDSP_ctoz((COMPLEX*)gFFTworksp, 2, &A, 1, nOver2);
 			
@@ -456,6 +456,7 @@ void smb2PitchShift(float pitchShift, long numSampsToProcess, long fftFrameSize,
 			
 //			NSLog(@"after transform");
 
+            // convert from split complex to complex interleaved for analysis
 			
 			vDSP_ztoc(&A, 1, (COMPLEX *)gFFTworksp, 2, nOver2);
 			
@@ -576,6 +577,8 @@ void smb2PitchShift(float pitchShift, long numSampsToProcess, long fftFrameSize,
 			
 			/* zero negative frequencies */
 			for (k = fftFrameSize+2; k < 2*fftFrameSize; k++) gFFTworksp[k] = 0.;
+            
+            // convert from complex interleaved to split complex vector
 	
 			vDSP_ctoz((COMPLEX*)gFFTworksp, 2, &A, 1, nOver2);	
 			
@@ -596,7 +599,7 @@ void smb2PitchShift(float pitchShift, long numSampsToProcess, long fftFrameSize,
 			vDSP_vsmul(A.imagp, 1, &scale, A.imagp, 1, nOver2 );
 			
 			
-			// ship it back to output buffer
+			// covert from split complex to complex interleaved
 			
 			vDSP_ztoc(&A, 1, (COMPLEX *) gFFTworksp, 2, nOver2);
 			
