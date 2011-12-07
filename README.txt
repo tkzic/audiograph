@@ -1,6 +1,6 @@
 audioGraph:
 README.txt
-12/4/2011
+12/7/2011
 
 iOS audio processing graph demonstration
 
@@ -46,7 +46,7 @@ audiograph@zerokidz.com
 
 Credits:
 
-This project constitutes repackaging, editing, and theft of amazing work by:
+This project is derived from work by:
 
 Chris Adamson
 Stefan Bernsee
