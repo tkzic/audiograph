@@ -1,6 +1,6 @@
 audioGraph:
 README.txt
-12/7/2011
+12/12/2011
 
 iOS audio processing graph demonstration
 
@@ -20,14 +20,14 @@ Features include:
 	o Convolution example with variable filter cutoff frequency
 * Stereo level meter
 * Synthesizer example - sine wave with an envelope generator
-* iOS 5 features (from Chris Adamson) including:
+* iOS 5 features including:
 	o MIDI sampler audio unit
 	o file player audio unit
 	o audio unit effects
 * Runs on iPad, iPhone, and iPod-Touch
-* Basic audio session management including detection of input devices and available channels
-* Commented source code.
-* Original music by Van Lawton
+* Open source
+* Available as free download from iTunes App Store
+* Music by Van Lawton
 * Plus everything from MixerHost 
 
 Requirements:
@@ -39,26 +39,28 @@ Instructions:
 
 Launch the app and press Play. 
 
-Source code, documentation, support:
+Source code, documentation, support, downloads:
 
-http://zerokidz.com/audiograph
-audiograph@zerokidz.com
+http://zerokidz.com/audiograph (website)
+https://github.com/tkzic/audiograph (github)
+audiograph@zerokidz.com (support/questions)
+http://itunes.apple.com/app/audiograph/id486193487 (app)
 
 Credits:
 
 This project is derived from work by:
 
 Chris Adamson
-Stefan Bernsee
+Stephan M. Bernsee
 Michael Tyson
 Stephen Smith
-Contributors to the Apple Core-Audio mailing list
-Contributors to stackoverflow.com
+Apple Core-Audio mailing list
+stackoverflow.com
 Apple's IOS developer program
 
 Thank you.
 
-- Tom Zicarelli 12/4/2011
+- Tom Zicarelli 12/12/2011
 
 Here is the original README file for MixerHost
 ----------------------------------------------
