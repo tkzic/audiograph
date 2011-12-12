@@ -862,7 +862,7 @@ void ringMod(
              UInt32 inNumberFrames,        // number of frames in this slice
              SInt16 *sampleBuffer) {      // frames (sample data)
     
-    // scope reference that allows access to everything in MixerHostAudio class 
+    //  scope reference that allows access to everything in MixerHostAudio class 
     
     MixerHostAudio* THIS = (MixerHostAudio *)inRefCon;	    
     
