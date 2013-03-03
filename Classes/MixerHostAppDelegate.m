@@ -60,7 +60,8 @@ Copyright (C) 2010 Apple Inc. All Rights Reserved.
     // The status bar is hidden for this app through the "Status bar is initially hidden" key
     //     in the MixerHost-Info.plist file.
 
-    [window addSubview: viewController.view];
+    // [window addSubview: viewController.view];
+    [self.window setRootViewController:viewController];
     [window makeKeyAndVisible];
     
     return YES;
