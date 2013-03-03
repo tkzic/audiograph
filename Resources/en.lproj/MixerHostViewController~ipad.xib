@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <archive type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="7.10">
 	<data>
-<<<<<<< HEAD
 		<int key="IBDocument.SystemTarget">1552</int>
 		<string key="IBDocument.SystemVersion">11G63</string>
 		<string key="IBDocument.InterfaceBuilderVersion">3084</string>
@@ -10,16 +9,6 @@
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 			<string key="NS.object.0">2083</string>
-=======
-		<int key="IBDocument.SystemTarget">1536</int>
-		<string key="IBDocument.SystemVersion">12C60</string>
-		<string key="IBDocument.InterfaceBuilderVersion">2840</string>
-		<string key="IBDocument.AppKitVersion">1187.34</string>
-		<string key="IBDocument.HIToolboxVersion">625.00</string>
-		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
-			<string key="NS.key.0">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-			<string key="NS.object.0">1926</string>
->>>>>>> ea0f3013a9b5d8a593b771b0265ce871d139b6ee
 		</object>
 		<object class="NSArray" key="IBDocument.IntegratedClassDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -919,7 +908,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<object class="IBUINavigationItem" id="269425925">
 								<reference key="IBUINavigationBar" ref="811631346"/>
-								<string key="IBUITitle">audioGraph</string>
+								<string key="IBUITitle">audioGraph1.1</string>
 								<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 							</object>
 						</object>
@@ -955,13 +944,8 @@
 				<reference key="NSWindow"/>
 				<reference key="NSNextKeyView" ref="811631346"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
-<<<<<<< HEAD
-					<int key="NSColorSpace">3</int>
-					<bytes key="NSWhite">MC4zMzMzMzMzMzMzAA</bytes>
-=======
 					<int key="NSColorSpace">1</int>
 					<bytes key="NSRGB">MC4yOTgwMzkyMjc3IDAuMjk4MDM5MjI3NyAwLjI5ODAzOTIyNzcAA</bytes>
->>>>>>> ea0f3013a9b5d8a593b771b0265ce871d139b6ee
 				</object>
 				<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
 				<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -972,28 +956,27 @@
 				<bool key="EncodedWithXMLCoder">YES</bool>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
-<<<<<<< HEAD
-						<string key="label">mixerBus4LevelFader</string>
+						<string key="label">mixerBus5LevelFader</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="827448673"/>
+						<reference key="destination" ref="71032266"/>
 					</object>
-					<int key="connectionID">146</int>
+					<int key="connectionID">108</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">micFxSelector</string>
+						<string key="label">micFxSwitch</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="289750912"/>
+						<reference key="destination" ref="203024378"/>
 					</object>
-					<int key="connectionID">144</int>
+					<int key="connectionID">81</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">synthPlayButton</string>
+						<string key="label">mixerBus3Switch</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="911394691"/>
+						<reference key="destination" ref="618483527"/>
 					</object>
-					<int key="connectionID">142</int>
+					<int key="connectionID">76</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
@@ -1005,153 +988,11 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">mixerBus0LevelFader</string>
+						<string key="label">mixerBus5Switch</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="98833880"/>
+						<reference key="destination" ref="502235606"/>
 					</object>
-					<int key="connectionID">44</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">numberOfInputChannelsDisplay</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="799303787"/>
-					</object>
-					<int key="connectionID">148</int>
-=======
-						<string key="label">mixerBus5FxSwitch</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="679014800"/>
-					</object>
-					<int key="connectionID">127</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">mixerOutputLevelFader</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="73522987"/>
-					</object>
-					<int key="connectionID">49</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">synthPlayButton</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="911394691"/>
-					</object>
-					<int key="connectionID">142</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">mixerBus4LevelFader</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="827448673"/>
-					</object>
-					<int key="connectionID">146</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">inputLevelDisplayLeft</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="874018788"/>
-					</object>
-					<int key="connectionID">151</int>
->>>>>>> ea0f3013a9b5d8a593b771b0265ce871d139b6ee
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">inputLevelDisplayLeft</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="874018788"/>
-					</object>
-					<int key="connectionID">151</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-<<<<<<< HEAD
-						<string key="label">micFreqDisplay</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="496703172"/>
-					</object>
-					<int key="connectionID">85</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">playButton</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="72612078"/>
-					</object>
-					<int key="connectionID">31</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">view</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="342338139"/>
-					</object>
-					<int key="connectionID">51</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">mixerBus4Switch</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="971785352"/>
-					</object>
-					<int key="connectionID">104</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">mixerBus3Switch</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="618483527"/>
-					</object>
-					<int key="connectionID">76</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">mixerFxSwitch</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="8975504"/>
-					</object>
-					<int key="connectionID">92</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">samplerPlayButton</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="370086386"/>
-					</object>
-					<int key="connectionID">138</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">mixerBus1LevelFader</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="597629821"/>
-					</object>
-					<int key="connectionID">46</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">mixerOutputLevelFader</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="73522987"/>
-					</object>
-					<int key="connectionID">49</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">mixerBus2LevelFader</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="932358601"/>
-					</object>
-					<int key="connectionID">59</int>
-=======
-						<string key="label">mixerFxSwitch</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="8975504"/>
-					</object>
-					<int key="connectionID">92</int>
+					<int key="connectionID">105</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
@@ -1163,19 +1004,59 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">micFxSelector</string>
+						<string key="label">playButton</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="289750912"/>
+						<reference key="destination" ref="72612078"/>
 					</object>
-					<int key="connectionID">144</int>
+					<int key="connectionID">31</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">samplerPlayButton</string>
+						<string key="label">mixerBus5FxSwitch</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="370086386"/>
+						<reference key="destination" ref="679014800"/>
 					</object>
-					<int key="connectionID">138</int>
+					<int key="connectionID">127</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">mixerBus4Switch</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="971785352"/>
+					</object>
+					<int key="connectionID">104</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">mixerBus1LevelFader</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="597629821"/>
+					</object>
+					<int key="connectionID">46</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">mixerFxSwitch</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="8975504"/>
+					</object>
+					<int key="connectionID">92</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">numberOfInputChannelsDisplay</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="799303787"/>
+					</object>
+					<int key="connectionID">148</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">mixerBus2LevelFader</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="932358601"/>
+					</object>
+					<int key="connectionID">59</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
@@ -1187,44 +1068,11 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">mixerBus0Switch</string>
+						<string key="label">inputLevelDisplayLeft</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="11368346"/>
+						<reference key="destination" ref="874018788"/>
 					</object>
-					<int key="connectionID">45</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">playButton</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="72612078"/>
-					</object>
-					<int key="connectionID">31</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">mixerBus3Switch</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="618483527"/>
-					</object>
-					<int key="connectionID">76</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">mixerBus5LevelFader</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="71032266"/>
-					</object>
-					<int key="connectionID">108</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">micFxFader</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="198464015"/>
-					</object>
-					<int key="connectionID">62</int>
->>>>>>> ea0f3013a9b5d8a593b771b0265ce871d139b6ee
+					<int key="connectionID">151</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
@@ -1236,68 +1084,11 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
-<<<<<<< HEAD
-						<string key="label">mixerBus5LevelFader</string>
+						<string key="label">mixerOutputLevelFader</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="71032266"/>
+						<reference key="destination" ref="73522987"/>
 					</object>
-					<int key="connectionID">108</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">mixerBus5FxSwitch</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="679014800"/>
-					</object>
-					<int key="connectionID">127</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">mixerBus0Switch</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="11368346"/>
-					</object>
-					<int key="connectionID">45</int>
-=======
-						<string key="label">micFreqDisplay</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="496703172"/>
-					</object>
-					<int key="connectionID">85</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">numberOfInputChannelsDisplay</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="799303787"/>
-					</object>
-					<int key="connectionID">148</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">mixerBus1LevelFader</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="597629821"/>
-					</object>
-					<int key="connectionID">46</int>
->>>>>>> ea0f3013a9b5d8a593b771b0265ce871d139b6ee
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">mixerBus5Switch</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="502235606"/>
-					</object>
-					<int key="connectionID">105</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-<<<<<<< HEAD
-						<string key="label">mixerBus2Switch</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="372976883"/>
-					</object>
-					<int key="connectionID">58</int>
+					<int key="connectionID">49</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
@@ -1306,37 +1097,62 @@
 						<reference key="destination" ref="198464015"/>
 					</object>
 					<int key="connectionID">62</int>
-=======
-						<string key="label">mixerBus2LevelFader</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="932358601"/>
-					</object>
-					<int key="connectionID">59</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">micFxSwitch</string>
+						<string key="label">samplerPlayButton</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="203024378"/>
+						<reference key="destination" ref="370086386"/>
 					</object>
-					<int key="connectionID">81</int>
->>>>>>> ea0f3013a9b5d8a593b771b0265ce871d139b6ee
+					<int key="connectionID">138</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">micFxSwitch</string>
+						<string key="label">mixerBus4LevelFader</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="203024378"/>
+						<reference key="destination" ref="827448673"/>
 					</object>
-					<int key="connectionID">81</int>
+					<int key="connectionID">146</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">mixerBus4Switch</string>
+						<string key="label">synthPlayButton</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="971785352"/>
+						<reference key="destination" ref="911394691"/>
 					</object>
-					<int key="connectionID">104</int>
+					<int key="connectionID">142</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">micFxSelector</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="289750912"/>
+					</object>
+					<int key="connectionID">144</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">mixerBus0LevelFader</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="98833880"/>
+					</object>
+					<int key="connectionID">44</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">micFreqDisplay</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="496703172"/>
+					</object>
+					<int key="connectionID">85</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">mixerBus0Switch</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="11368346"/>
+					</object>
+					<int key="connectionID">45</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
@@ -1519,21 +1335,21 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
-						<string key="label">synthPlayButtonPressed:</string>
-						<reference key="source" ref="911394691"/>
-						<reference key="destination" ref="372490531"/>
-						<int key="IBEventType">1</int>
-					</object>
-					<int key="connectionID">140</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">synthPlayButtonReleased:</string>
 						<reference key="source" ref="911394691"/>
 						<reference key="destination" ref="372490531"/>
 						<int key="IBEventType">7</int>
 					</object>
 					<int key="connectionID">141</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">synthPlayButtonPressed:</string>
+						<reference key="source" ref="911394691"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">1</int>
+					</object>
+					<int key="connectionID">140</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -1981,7 +1797,7 @@
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">235</int>
+			<int key="maxID">166</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -2306,10 +2122,6 @@
 		</object>
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
-<<<<<<< HEAD
 		<string key="IBCocoaTouchPluginVersion">2083</string>
-=======
-		<string key="IBCocoaTouchPluginVersion">1926</string>
->>>>>>> ea0f3013a9b5d8a593b771b0265ce871d139b6ee
 	</data>
 </archive>

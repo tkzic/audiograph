@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1D6058900D05DD3D006BFB54"
-               BuildableName = "audioGraph.app"
+               BuildableName = "audioGraph-test.app"
                BlueprintName = "audioGraph"
                ReferencedContainer = "container:audioGraph.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1D6058900D05DD3D006BFB54"
-            BuildableName = "audioGraph.app"
+            BuildableName = "audioGraph-test.app"
             BlueprintName = "audioGraph"
             ReferencedContainer = "container:audioGraph.xcodeproj">
          </BuildableReference>
@@ -54,7 +54,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1D6058900D05DD3D006BFB54"
-            BuildableName = "audioGraph.app"
+            BuildableName = "audioGraph-test.app"
             BlueprintName = "audioGraph"
             ReferencedContainer = "container:audioGraph.xcodeproj">
          </BuildableReference>
@@ -74,7 +74,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1D6058900D05DD3D006BFB54"
-            BuildableName = "audioGraph.app"
+            BuildableName = "audioGraph-test.app"
             BlueprintName = "audioGraph"
             ReferencedContainer = "container:audioGraph.xcodeproj">
          </BuildableReference>

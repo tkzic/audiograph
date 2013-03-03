@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0A58F3D4111CB6B50075A94F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A58F3D3111CB6B50075A94F /* AudioToolbox.framework */; };
 		0A63D1C011ECEE0400686627 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A63D1BC11ECEE0400686627 /* MainWindow.xib */; };
-		0A63D1C111ECEE0400686627 /* MixerHostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A63D1BE11ECEE0400686627 /* MixerHostViewController.xib */; };
 		0A63D29511ED1D6900686627 /* rounded_rectangle.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A63D29111ED1D6900686627 /* rounded_rectangle.png */; };
 		0A63D36711ED318800686627 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A63D36011ED318800686627 /* Icon-72.png */; };
 		0A63D36811ED318800686627 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A63D36111ED318800686627 /* Icon-Small-50.png */; };
@@ -22,11 +21,12 @@
 		0ACE7994118E259E00C092B8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ACE7993118E259E00C092B8 /* AVFoundation.framework */; };
 		0AFAF1E0111B982200B42D9F /* MixerHostAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFAF1DF111B982200B42D9F /* MixerHostAudio.m */; };
 		120AFC09147AC56400881631 /* SNFCoreAudioUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 120AFC07147AC56400881631 /* SNFCoreAudioUtils.c */; };
+		125F63CC16E3FF69004D1BFF /* MixerHostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 125F63CA16E3FF69004D1BFF /* MixerHostViewController.xib */; };
+		125F63CF16E3FF7A004D1BFF /* MixerHostViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 125F63CD16E3FF7A004D1BFF /* MixerHostViewController~ipad.xib */; };
 		125FA8CE148B77FC0012A06D /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 125FA8CD148B77FC0012A06D /* Default-Portrait~ipad.png */; };
 		1265ACBB1487203500122583 /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = 1265ACBA1487203500122583 /* Sounds */; };
 		128D14A5148B773600A14BF4 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 128D14A3148B773600A14BF4 /* Default@2x.png */; };
 		12A466BB148A6F6D0051ADA3 /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12A466B9148A6F6D0051ADA3 /* MainWindow-iPad.xib */; };
-		12A466C1148A70A00051ADA3 /* MixerHostViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12A466BF148A70A00051ADA3 /* MixerHostViewController~ipad.xib */; };
 		12B1F29D146A1F1A009C0367 /* TPCircularBuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 12B1F29C146A1F1A009C0367 /* TPCircularBuffer.c */; };
 		12DEF623148538300047696C /* congaloop.caf in Resources */ = {isa = PBXBuildFile; fileRef = 12DEF622148538300047696C /* congaloop.caf */; };
 		12DEF625148539930047696C /* caitlin.caf in Resources */ = {isa = PBXBuildFile; fileRef = 12DEF624148539930047696C /* caitlin.caf */; };
@@ -46,7 +46,6 @@
 /* Begin PBXFileReference section */
 		0A58F3D3111CB6B50075A94F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		0A63D1BD11ECEE0400686627 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = MainWindow.xib; sourceTree = "<group>"; };
-		0A63D1BF11ECEE0400686627 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = MixerHostViewController.xib; sourceTree = "<group>"; };
 		0A63D29111ED1D6900686627 /* rounded_rectangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rounded_rectangle.png; sourceTree = "<group>"; };
 		0A63D36011ED318800686627 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
 		0A63D36111ED318800686627 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
@@ -61,12 +60,13 @@
 		0AFAF1DF111B982200B42D9F /* MixerHostAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixerHostAudio.m; sourceTree = "<group>"; };
 		120AFC07147AC56400881631 /* SNFCoreAudioUtils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = SNFCoreAudioUtils.c; path = Classes/SNFCoreAudioUtils.c; sourceTree = "<group>"; };
 		120AFC08147AC56400881631 /* SNFCoreAudioUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SNFCoreAudioUtils.h; path = Classes/SNFCoreAudioUtils.h; sourceTree = "<group>"; };
+		125F63CB16E3FF69004D1BFF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = MixerHostViewController.xib; sourceTree = "<group>"; };
+		125F63CE16E3FF7A004D1BFF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "Resources/en.lproj/MixerHostViewController~ipad.xib"; sourceTree = "<group>"; };
 		125FA8CD148B77FC0012A06D /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
 		1265ACBA1487203500122583 /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
 		12819C381478A5120095F30F /* TPCircularBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPCircularBuffer.h; sourceTree = "<group>"; };
 		128D14A3148B773600A14BF4 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		12A466BA148A6F6D0051ADA3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "Resources/iPad/en.lproj/MainWindow-iPad.xib"; sourceTree = "<group>"; };
-		12A466C0148A70A00051ADA3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "MixerHostViewController~ipad.xib"; sourceTree = "<group>"; };
 		12B1F29C146A1F1A009C0367 /* TPCircularBuffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TPCircularBuffer.c; sourceTree = "<group>"; };
 		12DEF622148538300047696C /* congaloop.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = congaloop.caf; sourceTree = "<group>"; };
 		12DEF624148539930047696C /* caitlin.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = caitlin.caf; sourceTree = "<group>"; };
@@ -121,9 +121,9 @@
 		0A63D1BB11ECEE0400686627 /* en.lproj */ = {
 			isa = PBXGroup;
 			children = (
+				125F63CA16E3FF69004D1BFF /* MixerHostViewController.xib */,
 				12F45C06147B71030061E65C /* InfoPlist.strings */,
 				0A63D1BC11ECEE0400686627 /* MainWindow.xib */,
-				0A63D1BE11ECEE0400686627 /* MixerHostViewController.xib */,
 			);
 			name = en.lproj;
 			path = Resources/en.lproj;
@@ -161,7 +161,7 @@
 		12A466B8148A6F6D0051ADA3 /* iPad */ = {
 			isa = PBXGroup;
 			children = (
-				12A466BF148A70A00051ADA3 /* MixerHostViewController~ipad.xib */,
+				125F63CD16E3FF7A004D1BFF /* MixerHostViewController~ipad.xib */,
 				12A466B9148A6F6D0051ADA3 /* MainWindow-iPad.xib */,
 			);
 			name = iPad;
@@ -283,7 +283,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A63D1C011ECEE0400686627 /* MainWindow.xib in Resources */,
-				0A63D1C111ECEE0400686627 /* MixerHostViewController.xib in Resources */,
 				0A63D29511ED1D6900686627 /* rounded_rectangle.png in Resources */,
 				0A63D36711ED318800686627 /* Icon-72.png in Resources */,
 				0A63D36811ED318800686627 /* Icon-Small-50.png in Resources */,
@@ -299,10 +298,11 @@
 				12DEF62D148602D50047696C /* lead.aupreset in Resources */,
 				1265ACBB1487203500122583 /* Sounds in Resources */,
 				12A466BB148A6F6D0051ADA3 /* MainWindow-iPad.xib in Resources */,
-				12A466C1148A70A00051ADA3 /* MixerHostViewController~ipad.xib in Resources */,
 				128D14A5148B773600A14BF4 /* Default@2x.png in Resources */,
 				125FA8CE148B77FC0012A06D /* Default-Portrait~ipad.png in Resources */,
 				12E21C7616E3CF7800BAAB3F /* Default-568h@2x.png in Resources */,
+				125F63CC16E3FF69004D1BFF /* MixerHostViewController.xib in Resources */,
+				125F63CF16E3FF7A004D1BFF /* MixerHostViewController~ipad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,12 +334,20 @@
 			name = MainWindow.xib;
 			sourceTree = "<group>";
 		};
-		0A63D1BE11ECEE0400686627 /* MixerHostViewController.xib */ = {
+		125F63CA16E3FF69004D1BFF /* MixerHostViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0A63D1BF11ECEE0400686627 /* en */,
+				125F63CB16E3FF69004D1BFF /* en */,
 			);
 			name = MixerHostViewController.xib;
+			sourceTree = "<group>";
+		};
+		125F63CD16E3FF7A004D1BFF /* MixerHostViewController~ipad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				125F63CE16E3FF7A004D1BFF /* en */,
+			);
+			name = "MixerHostViewController~ipad.xib";
 			sourceTree = "<group>";
 		};
 		12A466B9148A6F6D0051ADA3 /* MainWindow-iPad.xib */ = {
@@ -348,15 +356,6 @@
 				12A466BA148A6F6D0051ADA3 /* en */,
 			);
 			name = "MainWindow-iPad.xib";
-			sourceTree = "<group>";
-		};
-		12A466BF148A70A00051ADA3 /* MixerHostViewController~ipad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				12A466C0148A70A00051ADA3 /* en */,
-			);
-			name = "MixerHostViewController~ipad.xib";
-			path = Resources/en.lproj;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
