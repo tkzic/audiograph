@@ -6,7 +6,8 @@ March 3, 2013
 
 Had some trouble with git this afternoon - unfortunately have had to recommit all the source files in the entire repository even though there were a small number of changes. The compiler warnings and runtime issues should be resolved. please contact me at tkzic@megalink.net if you have problems getting this current build to run in xCode.
 
-The app store version of audiograph is still broken in iOS 6
+As of today, The app store version of audioGraph is still broken in iOS 6.
+The version 1.1 update has been submitted is waiting for Apple's blessing.
 
 ----------------------------------------
 
