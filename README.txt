@@ -1,6 +1,14 @@
 audioGraph:
 README.txt
-12/12/2011
+March 3, 2013
+
+[notes] updated to run in iOS 6
+
+I had some trouble with git this afternoon - unfortunately have had to recommit all the source files in the entire repository even though there were a small number of changes. please contact me at tkzic@megalink.net if you have problems getting this current build to run in xCode.
+
+The app store version of audiograph is still broken in iOS 6
+
+----------------------------------------
 
 iOS audio processing graph demonstration
 
