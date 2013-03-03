@@ -531,7 +531,8 @@ void MyMIDINotifyProc (const MIDINotification  *message, void *refCon) {
 }
 
 static void	MyMIDIReadProc(const MIDIPacketList *pktlist, void *refCon, void *connRefCon) {
-	MixerHostAudio *myVC = (__bridge MixerHostAudio *) refCon;
+	// MixerHostAudio *myVC = (__bridge MixerHostAudio *) refCon;
+    MixerHostAudio *myVC = refCon;
 	
 	MIDIPacket *packet = (MIDIPacket *)pktlist->packet;	
 	for (int i=0; i < pktlist->numPackets; i++) {
@@ -1900,8 +1901,12 @@ float MagnitudeSquared(float x, float y) {
 
     // Specify that this object is the delegate of the audio session, so that
     //    this object's endInterruption method will be invoked when needed.
-    [mySession setDelegate: self];
 
+    // this method deprecated in ios6.0
+    // replaced with sharedInstance 'notification'
+    //
+    // [mySession setDelegate: self];
+    [[AVAudioSession sharedInstance] setActive:YES error:nil];
 
     // tz change to play and record
 	// Assign the Playback category to the audio session.
@@ -1941,8 +1946,11 @@ float MagnitudeSquared(float x, float y) {
     //
     
     
+    // method deprecated in ios 6.0
+	// inputDeviceIsAvailable = [mySession inputIsAvailable];
     
-	inputDeviceIsAvailable = [mySession inputIsAvailable];
+    inputDeviceIsAvailable = [mySession isInputAvailable];
+    
 //    NSAssert( micIsAvailable, @"No audio input device available." );
 
 	
@@ -1963,8 +1971,13 @@ float MagnitudeSquared(float x, float y) {
     // Request the desired hardware sample rate.
     self.graphSampleRate = 44100.0;    // Hertz
     
-    [mySession setPreferredHardwareSampleRate: graphSampleRate
-                                        error: &audioSessionError];
+    // deprecated in ios 6.0
+    // [mySession setPreferredHardwareSampleRate: graphSampleRate
+    //                                    error: &audioSessionError];
+   
+    [mySession setPreferredSampleRate: graphSampleRate
+                                         error: &audioSessionError];
+    
     
     if (audioSessionError != nil) {
     
@@ -2002,8 +2015,13 @@ float MagnitudeSquared(float x, float y) {
     }
 
     // Obtain the actual hardware sample rate and store it for later use in the audio processing graph.
-    self.graphSampleRate = [mySession currentHardwareSampleRate];
-	NSLog(@"Actual sample rate is: %f", self.graphSampleRate );
+    
+    // deprecated with ios6.0
+    // self.graphSampleRate = [mySession currentHardwareSampleRate];
+	
+    
+    self.graphSampleRate = [mySession sampleRate];
+    NSLog(@"Actual sample rate is: %f", self.graphSampleRate );
 	
 	// find out the current buffer duration
 	// to calculate duration use: buffersize / sample rate, eg., 512 / 44100 = .012
@@ -2023,8 +2041,12 @@ float MagnitudeSquared(float x, float y) {
     
     // find out how many input channels are available 
     
-    NSInteger numberOfChannels = [mySession currentHardwareInputNumberOfChannels];  
-	NSLog(@"number of channels: %d", numberOfChannels );	
+    // deprecated with ios6.0
+    // NSInteger numberOfChannels = [mySession currentHardwareInputNumberOfChannels];
+    
+    NSInteger numberOfChannels = [mySession inputNumberOfChannels];
+    
+    NSLog(@"number of channels: %d", numberOfChannels );
     displayNumberOfInputChannels = numberOfChannels;    // set instance variable for display
 
     return ;   // everything ok
@@ -3886,8 +3908,10 @@ void ConvertInt16ToFloat(MixerHostAudio *THIS, void *buf, float *outputBuf, size
 
     // Test if the interruption that has just ended was one from which this app 
     //    should resume playback.
-    if (flags & AVAudioSessionInterruptionFlags_ShouldResume) {
-
+    
+    // deprecated in ios6.0
+    // if (flags & AVAudioSessionInterruptionFlags_ShouldResume) {
+    if (flags & AVAudioSessionInterruptionOptionShouldResume) {
         NSError *endInterruptionError = nil;
         [[AVAudioSession sharedInstance] setActive: YES
                                              error: &endInterruptionError];
@@ -3996,7 +4020,7 @@ void ConvertInt16ToFloat(MixerHostAudio *THIS, void *buf, float *outputBuf, size
     
 	// open the file
 	NSString *filePath = [[NSBundle mainBundle] pathForResource: FILE_PLAYER_FILE ofType:FILE_PLAYER_FILE_TYPE];
-	CFURLRef audioURL = (__bridge CFURLRef) [NSURL fileURLWithPath:filePath];
+	CFURLRef audioURL = ( CFURLRef) [NSURL fileURLWithPath:filePath];
 	
 	// open the input audio file
 	CheckError(AudioFileOpenURL(audioURL, kAudioFileReadPermission, 0, &filePlayerFile),
@@ -4073,7 +4097,7 @@ void ConvertInt16ToFloat(MixerHostAudio *THIS, void *buf, float *outputBuf, size
 -(OSStatus) setUpAUSampler {
     
 	NSString *filePath = [[NSBundle mainBundle] pathForResource: AU_SAMPLER_PRESET_FILE ofType:@"aupreset"];
-	CFURLRef presetURL = (__bridge CFURLRef) [NSURL fileURLWithPath:filePath];
+	CFURLRef presetURL = ( CFURLRef) [NSURL fileURLWithPath:filePath];
     
     
     if (presetURL) {
@@ -4141,7 +4165,7 @@ void ConvertInt16ToFloat(MixerHostAudio *THIS, void *buf, float *outputBuf, size
 -(OSStatus) setUpMIDI {
 	
 	MIDIClientRef client;
-	void* callbackContext = (__bridge void*) self;
+	void* callbackContext = ( void*) self;
 	CheckError (MIDIClientCreate(CFSTR("Core MIDI to System Sounds Demo"), MyMIDINotifyProc, callbackContext, &client),
 				"Couldn't create MIDI client");
 	
