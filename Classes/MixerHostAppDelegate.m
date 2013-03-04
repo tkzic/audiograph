@@ -61,8 +61,16 @@ Copyright (C) 2010 Apple Inc. All Rights Reserved.
     //     in the MixerHost-Info.plist file.
 
     // [window addSubview: viewController.view];
+    
+    // this workaround is necessary on 5th generation ipod - since we are using ancient xib screen
+    [window setFrame:[[UIScreen mainScreen]bounds]];
+    
     [self.window setRootViewController:viewController];
+    
+ 
     [window makeKeyAndVisible];
+    
+    
     
     return YES;
 }

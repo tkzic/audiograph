@@ -28,6 +28,7 @@
 		128D14A5148B773600A14BF4 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 128D14A3148B773600A14BF4 /* Default@2x.png */; };
 		12A466BB148A6F6D0051ADA3 /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12A466B9148A6F6D0051ADA3 /* MainWindow-iPad.xib */; };
 		12B1F29D146A1F1A009C0367 /* TPCircularBuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 12B1F29C146A1F1A009C0367 /* TPCircularBuffer.c */; };
+		12D3F78516E4370C0040612F /* diode144x144.png in Resources */ = {isa = PBXBuildFile; fileRef = 12D3F78416E4370C0040612F /* diode144x144.png */; };
 		12DEF623148538300047696C /* congaloop.caf in Resources */ = {isa = PBXBuildFile; fileRef = 12DEF622148538300047696C /* congaloop.caf */; };
 		12DEF625148539930047696C /* caitlin.caf in Resources */ = {isa = PBXBuildFile; fileRef = 12DEF624148539930047696C /* caitlin.caf */; };
 		12DEF62D148602D50047696C /* lead.aupreset in Resources */ = {isa = PBXBuildFile; fileRef = 12DEF62C148602D50047696C /* lead.aupreset */; };
@@ -68,6 +69,7 @@
 		128D14A3148B773600A14BF4 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		12A466BA148A6F6D0051ADA3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "Resources/iPad/en.lproj/MainWindow-iPad.xib"; sourceTree = "<group>"; };
 		12B1F29C146A1F1A009C0367 /* TPCircularBuffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TPCircularBuffer.c; sourceTree = "<group>"; };
+		12D3F78416E4370C0040612F /* diode144x144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diode144x144.png; sourceTree = "<group>"; };
 		12DEF622148538300047696C /* congaloop.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = congaloop.caf; sourceTree = "<group>"; };
 		12DEF624148539930047696C /* caitlin.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = caitlin.caf; sourceTree = "<group>"; };
 		12DEF62C148602D50047696C /* lead.aupreset */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = lead.aupreset; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				12D3F78416E4370C0040612F /* diode144x144.png */,
 				12E21C7516E3CF7800BAAB3F /* Default-568h@2x.png */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
@@ -303,6 +306,7 @@
 				12E21C7616E3CF7800BAAB3F /* Default-568h@2x.png in Resources */,
 				125F63CC16E3FF69004D1BFF /* MixerHostViewController.xib in Resources */,
 				125F63CF16E3FF7A004D1BFF /* MixerHostViewController~ipad.xib in Resources */,
+				12D3F78516E4370C0040612F /* diode144x144.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

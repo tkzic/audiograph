@@ -370,6 +370,8 @@ AudioUnitParameterValue isOn = (AudioUnitParameterValue) sender.isOn;
     [self registerForAudioObjectNotifications];
     [self initializeMixerSettingsToUI];
     
+ 
+    
       
 }
 
