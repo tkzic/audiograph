@@ -9,6 +9,10 @@ Had some trouble with git this afternoon - unfortunately have had to recommit al
 As of today, The app store version of audioGraph is still broken in iOS 6.
 The version 1.1 update has been submitted is waiting for Apple's blessing.
 
+<a href="https://www.cisimple.com/jobs/ty3kty9ncpm78um1l"><img src='https://www.cisimple.com/jobs/ty3kty9ncpm78um1l/build_status.png'/></a>
+
+Continuous Integration provided by [cisimple](https://www.cisimple.com).
+
 ----------------------------------------
 
 iOS audio processing graph demonstration
