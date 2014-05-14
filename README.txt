@@ -1,6 +1,9 @@
 audioGraph:
 README.txt
-12/12/2011
+5/14/2014
+version 1.2 - tested on iOS 7 - compiles and runs with several warnings about deprecated features
+This is a temporary fix - as I noticed there were issues with the current version in App store. More work will be done on this App over the coming months to update core audio features.
+----
 
 iOS audio processing graph demonstration
 
