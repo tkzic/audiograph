@@ -52,14 +52,14 @@
                     </items>
                 </toolbar>
                 <slider opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="9.9999997473787516e-06" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="23">
-                    <rect key="frame" x="91" y="228" width="111" height="29"/>
+                    <rect key="frame" x="91" y="228" width="111" height="31"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <connections>
                         <action selector="mixerInputGainChanged:" destination="-1" eventType="valueChanged" id="42"/>
                     </connections>
                 </slider>
                 <slider opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="24">
-                    <rect key="frame" x="7" y="405" width="225" height="29"/>
+                    <rect key="frame" x="7" y="405" width="225" height="31"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <connections>
                         <action selector="mixerOutputGainChanged:" destination="-1" eventType="valueChanged" id="41"/>
@@ -87,7 +87,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <slider opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="9.9999997473787516e-06" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="27">
-                    <rect key="frame" x="206" y="228" width="112" height="29"/>
+                    <rect key="frame" x="206" y="228" width="112" height="31"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <connections>
                         <action selector="mixerInputGainChanged:" destination="-1" eventType="valueChanged" id="43"/>
@@ -101,7 +101,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <slider opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="9.9999997473787516e-06" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="53">
-                    <rect key="frame" x="92" y="60" width="140" height="29"/>
+                    <rect key="frame" x="92" y="60" width="140" height="31"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <connections>
                         <action selector="mixerInputGainChanged:" destination="-1" eventType="valueChanged" id="57"/>
@@ -122,7 +122,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <slider opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="9.9999997473787516e-06" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="70">
-                    <rect key="frame" x="91" y="272" width="141" height="29"/>
+                    <rect key="frame" x="91" y="272" width="141" height="31"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <connections>
                         <action selector="mixerInputGainChanged:" destination="-1" eventType="valueChanged" id="74"/>
@@ -143,7 +143,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <slider opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="9.9999997473787516e-06" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="94">
-                    <rect key="frame" x="92" y="316" width="140" height="29"/>
+                    <rect key="frame" x="92" y="316" width="140" height="31"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <connections>
                         <action selector="mixerInputGainChanged:" destination="-1" eventType="valueChanged" id="101"/>
@@ -164,14 +164,14 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="play" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="118">
-                    <rect key="frame" x="208" y="301" width="40" height="21"/>
+                    <rect key="frame" x="256" y="307" width="40" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="play" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="119">
-                    <rect key="frame" x="208" y="254" width="40" height="21"/>
+                    <rect key="frame" x="256" y="259" width="40" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -199,7 +199,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <slider opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="9.9999997473787516e-06" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="97">
-                    <rect key="frame" x="91" y="355" width="141" height="29"/>
+                    <rect key="frame" x="91" y="355" width="141" height="31"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <connections>
                         <action selector="mixerInputGainChanged:" destination="-1" eventType="valueChanged" id="103"/>
@@ -220,7 +220,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="60">
-                    <rect key="frame" x="92" y="172" width="226" height="29"/>
+                    <rect key="frame" x="92" y="172" width="226" height="31"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <connections>
                         <action selector="micFxFaderChanged:" destination="-1" eventType="valueChanged" id="61"/>
@@ -262,7 +262,7 @@
                     </connections>
                 </switch>
                 <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="112">
-                    <rect key="frame" x="3" y="110" width="313" height="44"/>
+                    <rect key="frame" x="3" y="110" width="313" height="29"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <segments>
                         <segment title="ring"/>
@@ -290,8 +290,8 @@
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="135">
-                    <rect key="frame" x="238" y="303" width="78" height="32"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="135">
+                    <rect key="frame" x="238" y="306" width="78" height="32"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -301,8 +301,8 @@
                         <action selector="samplerPlayButtonReleased:" destination="-1" eventType="touchUpInside" id="137"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="139">
-                    <rect key="frame" x="237" y="259" width="79" height="32"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="139" colorLabel="IBBuiltInLabel-Orange">
+                    <rect key="frame" x="237" y="257" width="79" height="32"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -328,7 +328,7 @@
                     </items>
                 </navigationBar>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.20000000298023224" contentMode="left" fixedFrame="YES" text="" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="158">
-                    <rect key="frame" x="1" y="209" width="320" height="176"/>
+                    <rect key="frame" x="-1" y="212" width="320" height="176"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
