@@ -31,6 +31,7 @@
 		1271744D19234EA50061F0FB /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1271744B19234EA50061F0FB /* Icon-60@2x.png */; };
 		1271744E19234EA50061F0FB /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1271744C19234EA50061F0FB /* Icon-76@2x.png */; };
 		128D14A5148B773600A14BF4 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 128D14A3148B773600A14BF4 /* Default@2x.png */; };
+		1291A3651923657A0038CBF3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1291A3641923657A0038CBF3 /* Default-568h@2x.png */; };
 		12A466BB148A6F6D0051ADA3 /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12A466B9148A6F6D0051ADA3 /* MainWindow-iPad.xib */; };
 		12A466C1148A70A00051ADA3 /* MixerHostViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12A466BF148A70A00051ADA3 /* MixerHostViewController~ipad.xib */; };
 		12B1F29D146A1F1A009C0367 /* TPCircularBuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 12B1F29C146A1F1A009C0367 /* TPCircularBuffer.c */; };
@@ -76,6 +77,7 @@
 		1271744C19234EA50061F0FB /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
 		12819C381478A5120095F30F /* TPCircularBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPCircularBuffer.h; sourceTree = "<group>"; };
 		128D14A3148B773600A14BF4 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		1291A3641923657A0038CBF3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		12A466BA148A6F6D0051ADA3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "Resources/iPad/en.lproj/MainWindow-iPad.xib"; sourceTree = "<group>"; };
 		12A466C0148A70A00051ADA3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "MixerHostViewController~ipad.xib"; sourceTree = "<group>"; };
 		12B1F29C146A1F1A009C0367 /* TPCircularBuffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TPCircularBuffer.c; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 		0A63D29011ED1D6900686627 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				1291A3641923657A0038CBF3 /* Default-568h@2x.png */,
 				1271744B19234EA50061F0FB /* Icon-60@2x.png */,
 				1271744C19234EA50061F0FB /* Icon-76@2x.png */,
 				1271744519234DA80061F0FB /* Icon-76.png */,
@@ -313,6 +316,7 @@
 				0A63D36A11ED318800686627 /* Icon-Small@2x.png in Resources */,
 				0A63D36B11ED318800686627 /* Icon.png in Resources */,
 				0A63D36C11ED318800686627 /* Icon@2x.png in Resources */,
+				1291A3651923657A0038CBF3 /* Default-568h@2x.png in Resources */,
 				0A63D36D11ED318800686627 /* iTunesArtwork in Resources */,
 				0A63D37711ED322500686627 /* Default.png in Resources */,
 				12F45C07147B71030061E65C /* InfoPlist.strings in Resources */,
